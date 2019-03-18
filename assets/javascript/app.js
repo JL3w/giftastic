@@ -25,7 +25,7 @@ function renderButtons() {
   $(document).on("click", ".topic", function(event) {
     event.preventDefault();
     var topic = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=hPbcV5OKBoyuEzCYPU5Kgt5ORqa62VEk&limit=6";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=hPbcV5OKBoyuEzCYPU5Kgt5ORqa62VEk&limit=6";
     $("#gifs").empty();
   $.ajax({
     url: queryURL,
